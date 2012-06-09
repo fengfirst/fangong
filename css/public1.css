@@ -1,0 +1,368 @@
+body{
+	background: #f3f3f3;
+}
+
+.wall {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+.wall blockquote {
+  border-color: #ddd;
+  border-color: rgba(0, 0, 0, 0.15);
+}
+.wall-large {
+  padding: 24px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+.wall-small {
+  padding: 9px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}*/
+
+.studentList.thumbnails img{
+	margin-right: 10px;
+}
+.student .info{
+	color: #a0a0a0;
+	font-size: 12px;
+}
+
+.row{
+	background:#fff;
+	margin-bottom: 20px;
+	padding: 20px 0 0;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+.row h3 {
+	position: relative;
+}
+.row h3 small{
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.topBar{
+	padding: 10px 0 0;
+}
+.topBar .pull-left{
+	margin-left: 10px;
+}
+
+.coursePlan li{
+	background: url(../img/welcome_bg_v3.png) no-repeat right -780px;
+	border-bottom: #eee;
+
+}
+.coursePlan li, .coursePlan li a{
+	display: block;
+	height: 60px;
+	overflow: hidden;
+}
+ .coursePlan li a{
+	padding: 15px 10px;
+}
+.coursePlan a span{
+	color: #666;
+	font-size: 12px;
+	display: block;
+}
+
+.navbar .container{
+	width: 960px;
+	margin: 0 auto;
+}
+.header{
+	padding: 10px 0;
+}
+
+a{
+	color: #333;
+}
+a:hover{
+	color: #d91b96;
+	color: #ff6699;
+	text-decoration: none;
+}
+p{
+	color: #999;
+	font-size: 12px;
+}
+h3{
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+.eventList li{
+	padding-left: 37px;
+	position: relative;
+	*zoom: 1;
+	height: 40px;
+}
+.eventList img{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.onlineRegistration.btn{
+	display: block;
+	margin-bottom: 20px;
+	border: 1px solid ##FF85B4;
+	color: #ff89a7;
+	font-size: 22px;
+	font-weight: bold;
+}
+.activities ul{
+	margin-left: 20px;
+}
+.activities li{
+1border:1px solid red;
+margin-left: 3px;
+}
+
+.navbar-inner {
+    1background: #ff9abf url(../img/tab_bg9.png) repeat-x;
+	background: #d91b96;
+	background: #e34782;
+	1background: #afb1b4;
+	background-image: none;
+}
+
+.navbar-inner .nav > li > a{
+	color: #f0e0e8;
+	text-shadow: none;
+	color: #f5dce4;
+	1color: #e7e8e9;
+
+	
+}
+
+.navbar .nav .active > a, .navbar .nav .active > a:hover {
+	1background: #e03676;
+	background: #e03072;
+}
+.nav-pills > .active > a, .nav-pills > .active > a:hover {
+    background-color: #e9e9e9;
+    color: #e34782;
+}
+.nav-pills > li > a {
+    font-weight: bold;
+	color: #666;
+}
+
+.shareBar{
+	margin-bottom: 20px;
+
+}
+
+.shareIcon{
+	background: url(../img/icons_social.png) no-repeat;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	height: 20px;
+	width: 20px;
+	line-height: 20px;
+	vertical-align: middle;
+	text-indent: -9999px;
+	
+}
+
+.shareSina{
+	background-position: 0 0;
+}
+.shareSina:hover{
+	background-position: 0 -30px;
+}
+.shareQzone{
+	background-position: -30px 0;
+}
+.shareQzone:hover{
+	background-position: -30px -30px;
+}
+.shareTqq{
+	background-position: -60px 0;
+}
+.shareTqq:hover{
+	background-position: -60px -30px;
+}
+.row .more{
+	margin-right: 20px;
+}
+
+
+.mosaic
+{
+	position: relative;
+
+	1border: 1px solid red;
+	1background: #fff;
+}
+.mosaic .stage
+{
+	position: absolute;
+	top: -30000em;
+	visibility: hidden;
+	width: 900px;
+
+}
+.mosaic .screen
+{
+	position: relative;
+
+}
+.mosaic .mode-master .mode
+{
+	display: none;
+}
+.mosaic .mode-master.display .mode.display,.mosaic .mode-master.loading .mode.loading,.mosaic .mode-master.error .mode.error
+{
+	display: block;
+}
+.mosaic .headertile
+{
+	position: absolute;
+}
+.mosaic .headertile .headerPhase
+{
+	width: auto;
+}
+.mosaic .messagetile
+{
+	background-color: transparent;
+}
+.mosaic .mode.loading
+{
+	background: #f0f0f0 url(/ui/desktop/images/ajax-loader_bert.gif) no-repeat center center;
+	height: 50px;
+}
+.statictile {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 304px;
+}
+.columnRight {
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+.clip.collect {
+    1background: url("/ui/desktop/images/tape1.gif") no-repeat scroll center top, url("/ui/desktop/images/tear.jpg") no-repeat scroll left bottom, none repeat scroll 0 0 #FFFFFF;
+    1padding: 26px 15px 35px;
+}
+
+.tile {
+    background-color: #FFFFFF;
+    color: #464646;
+    1padding: 15px;
+    position: absolute;
+    width: 220px;
+
+}
+
+.tile .imageContainer {
+    display: block;
+    margin: 0 0 11px;
+    max-width: 220px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+	
+}
+ .imageContainer img{
+ 	width: 220px;
+ }
+ 
+ ul, ol{
+ 	list-style: none outside none;
+    margin-left: 0;
+ }
+ body{
+ 	overflow: visible;
+ }
+ 
+ h4 small{
+ 	margin-left: 5px;
+ }
+#teachers .item{
+ 	background: #fff;
+	margin-bottom: 20px;
+	height: 180px;
+	overflow: hidden;
+ }
+ .teacher{
+ 	padding: 15px 15px 15px 15px;
+	1position: relative;
+	*1zoom: 1;
+	1border: 1px solid red;
+ }
+ .teacher .imageContainer{
+ 	1position: absolute;
+	1left: 15px;
+	1top: 15px;
+
+	float: left;
+	margin-right: 20px;
+	1overflow: hidden;
+ }
+  .teacher .imageContainer img{
+  		width: 150px;
+	height: 150px;
+  }
+  .teacher .works, .teacher .jobTitle{
+  	margin-top: 10px;
+  }
+ .teachers.row{
+ 	background: transparent;
+ }
+ .about.row{
+ 	margin-left: 0;
+	padding: 30px 40px
+ }
+ .about h1{
+ 	margin-bottom: 30px;
+ }
+ .about h2{
+ 	margin-bottom: 20px;
+ }
+ .about p{
+ 	color: #333;
+	font-size: 18px;
+	line-height: 1.4;
+ }
+ .about .description{
+ 	margin-bottom: 35px;
+ }
+  .actorOrActress p,  .teacherWorks p{
+  margin-left: 20px;
+  }
+ .actorOrActress img{
+ 	width: 100px;
+	height: 100px;
+ }
+ .teacherWorks img{
+ 	height: 100px;
+ }
+ 
+ 
+ .work .imageContainer{
+ 	margin-bottom: 20px;
+ }
+ .work .imageContainer img{
+ 	width: 560px; 
+ }

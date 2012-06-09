@@ -1,0 +1,447 @@
+#zoomScroll .close{
+	position: absolute;
+	right: 10px; 
+	top: 10px;
+	
+}
+#zoomScroll .preNav, #zoomScroll .nextNav{
+	1bottom: 131px;
+    position: absolute;
+    top: 30%;
+    1width: 40px;
+}
+#zoomScroll .nextNav{
+	right: 0;
+}
+#zoomScroll{
+	background-color: rgba(255,255,255,0);
+	*background-color: #fff;
+	bottom: 0;
+	left: 0;
+	overflow-x: auto;
+	overflow-y: scroll;
+	position: fixed;
+	right: 0;
+	top: 0;
+	webkit-perspective: 1000;
+	z-index: 9999;
+}
+#zoomScroll.visible
+{
+	background-color: rgba(255,255,255,0.93);
+}
+.pin.spring
+{
+	webkit-perspective: 1000;
+	webkit-transform: scale(.98,.98);
+	webkit-transition: 0.03s all ease-out;
+}
+.pin.zoomed
+{
+	visibility: hidden;
+}
+#zoomScroll #zoom
+{
+	overflow: hidden;
+	position: fixed;
+	z-index: 2;
+}
+#zoomScroll.visible #zoom
+{
+	box-shadow: 0 3px 8px rgba(34, 25, 25, 0.4);
+	font-size: 13px;
+	margin-left: -330px;
+	moz-box-shadow: 0 3px 8px rgba(34, 25, 25, 0.4);
+	padding: 20px 30px 0;
+	top: 110px !important;
+	webkit-box-shadow: 0 3px 8px rgba(34, 25, 25, 0.4);
+	width: 600px;
+}
+#zoomScroll.visible.loaded #zoom
+{
+	margin: 20px auto;
+	position: static;
+	webkit-transition: 0s all ease-out;
+}
+#zoom #SocialShare
+{
+	margin-left: 360px;
+}
+#zoom #PinPinner
+{
+	margin: -20px -30px 20px;
+	overflow: visible;
+	position: relative;
+}
+#zoom #PinPinner #PinnerImage img
+{
+	height: 49px;
+	width: 49px;
+}
+#zoom #PinPinner .Button13
+{
+	float: right;
+	margin-top: 12px;
+}
+#zoom #PinImageHolder
+{
+	margin: 0 0 20px;
+	overflow: visible;
+	position: relative;
+}
+#zoom #PinImageHolder iframe
+{
+	display: block;
+}
+#zoom .PinImage
+{
+	background-color: #f2f0f0;
+}
+#zoom .PinImage img
+{
+	max-width: none;
+}
+#zoom .PriceContainer
+{
+	left: -30px;
+	top: -20px;
+}
+#zoom .price
+{
+	font-size: 13px;
+	height: 24px;
+	left: -35px;
+	top: 26px;
+	width: 150px;
+}
+#zoom #error
+{
+	background-color: #fff;
+	bottom: 0;
+	left: 0;
+	opacity: 0.95;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 1000;
+}
+#zoom #error p
+{
+	font-size: 24px;
+	font-weight: bold;
+	left: 0;
+	margin-top: -14px;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	top: 50%;
+}
+#zoom #PinActionButtons
+{
+	display: none;
+	left: 7px;
+	overflow: visible;
+	padding: 0;
+	position: absolute;
+	top: 15px;
+	z-index: 3;
+}
+#zoom #PinImageHolder:hover #PinActionButtons
+{
+	display: inline !important;
+}
+#zoom #PinImageHolder .Button, #zoom #PinImageHolder .Button2
+{
+	float: left;
+	margin-left: 8px;
+}
+#zoom #PinImageHolder .Button
+{
+	box-shadow: inset 0 1px rgba(255,255,255,0.35);
+}
+#zoom #PinImageHolder .Button span
+{
+	border-color: rgba(140,126,126,0.5);
+}
+#zoom #PinImageHolder .Button:hover span
+{
+	border-color: rgba(140,126,126,0.75);
+	box-shadow: inset 0 1px rgba(255,255,255,0.35), 0 1px 1px rgba(35,24,24,0.75);
+}
+#zoom #PinImageHolder .Button:active span
+{
+	box-shadow: inset 0 1px 2px rgba(34,25,25,0.25);
+}
+#zoom #PinImageHolder .Button em, #zoom #PinImageHolder .Button2 em
+{
+	background-image: url(../images/ActionIcons.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 13px;
+	width: 12px;
+}
+#zoom #PinImageHolder .RepinButton em
+{
+	background-position: -12px 0;
+	margin-right: 4px;
+}
+#zoom #PinImageHolder .RepinButton:hover em
+{
+	background-position: -12px -13px;
+}
+#zoom #PinImageHolder .RepinButton:active em
+{
+	background-position: -12px -26px;
+}
+#zoom #PinImageHolder .ZoomLikeButton em
+{
+	background-position: -24px 0;
+	margin-right: 3px;
+}
+#zoom #PinImageHolder .ZoomLikeButton:hover em
+{
+	background-position: -24px -13px;
+}
+#zoom #PinImageHolder .ZoomLikeButton:active em
+{
+	background-position: -24px -26px;
+}
+#zoom #loading
+{
+	margin: 0 -30px;
+}
+#zoom #loading img
+{
+	display: block;
+	margin: 25px auto;
+	width: 17px;
+}
+.visible #zoom #loading img
+{
+	width: 45px;
+}
+.loading #zoom #loading img, #LoadingPeople img, img.loading-animated
+{
+	moz-animation-duration: 0.66s;
+	moz-animation-iteration-count: infinite;
+	moz-animation-name: LoadingRotate;
+	moz-transition-timing-function: linear;
+	webkit-animation-duration: 0.66s;
+	webkit-animation-iteration-count: infinite;
+	webkit-animation-name: LoadingRotate;
+	webkit-transition-timing-function: linear;
+}
+@-webkit-keyframes LoadingRotate
+{
+	from
+	{
+		webkit-transform: rotate(0deg);
+	}
+	to
+	{
+		webkit-transform: rotate(360deg);
+	}
+}
+@-moz-keyframes LoadingRotate
+{
+	from
+	{
+		moz-transform: rotate(0deg);
+	}
+	to
+	{
+		moz-transform: rotate(360deg);
+	}
+}
+#zoomScroll.loaded #loading
+{
+	display: none;
+}
+#zoom .description
+{
+	margin: 0;
+	padding: 0 0 20px;
+}
+#zoom .convo
+{
+	background: none;
+	margin: 0 -30px;
+	padding: 10px 30px;
+}
+#zoom .convo .ImgLink
+{
+	margin-right: 8px;
+	width: 50px;
+}
+#zoom .convo .ImgLink img
+{
+	height: 50px;
+	width: 50px;
+}
+#zoom .comments,
+#zoom .comments a
+{
+	color: #221919 !important;
+}
+#zoom .comments .comment
+{
+	border: solid #d1cdcd;
+	border-width: 1px 0 0;
+	padding: 15px 30px;
+}
+#zoom .comments .comment p
+{
+	width: auto;
+}
+#zoom .PinComments
+{
+	margin-bottom: 0;
+}
+#zoom .PinComments .comment
+{
+	margin-bottom: 10px;
+	padding: 0;
+}
+#zoom .PinComments .CommenterImage
+{
+	margin-right: 10px;
+}
+#zoom .PinComments .CommenterImage img,
+#zoom #PinAddComment .CommenterImage
+{
+	height: 49px;
+	width: 49px;
+}
+#zoom .PinComments .comment p
+{
+	font-size: 13px;
+	margin: 0 0 0 60px;
+}
+#zoom #PinAddComment
+{
+	padding: 0 0 15px;
+}
+#zoom #PinAddComment .InputContainer
+{
+	margin-left: 59px;
+}
+#zoom #PinAddComment #CloseupComment
+{
+	background-color: #fff;
+	width: 523px;
+}
+#zoom #PinAddCommentControls .HelpText
+{
+	margin-left: 65px;
+}
+#zoom .PinInfo
+{
+	border-top: 1px solid #d1cdcd;
+	margin: 0 -30px;
+	overflow: hidden;
+	padding: 30px 30px 29px;
+}
+#zoom .PinInfo p
+{
+	margin: 0;
+}
+#zoom .PinInfo h3
+{
+	font-size: 23px;
+	font-weight: bold;
+	margin-bottom: 8px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+#zoom .PinInfo h3 a
+{
+	overflow: hidden;
+	white-space: nowrap;
+}
+#zoom .PinInfo li
+{
+	float: left;
+	height: 49px;
+	margin: 0 1px 1px 0;
+	width: 49px;
+}
+#zoom .PinInfo li img
+{
+	background-color: #f2f0f0;
+	height: 49px;
+	width: 49px;
+}
+#zoom .PinInfo li:last-child
+{
+	margin-right: 0;
+}
+#zoom .PinInfo .Button, #zoom .PinInfo .Button2
+{
+	float: right;
+	margin-top: 14px;
+}
+#zoom #ZoomSource
+{
+	border-left: 1px solid #d1cdcd;
+	float: right;
+	padding-left: 25px;
+	width: 250px;
+}
+#zoom #ZoomOrigin
+{
+	float: left;
+	padding-right: 25px;
+	width: 299px;
+}
+#zoom #ZoomOrigin h3
+{
+	width: 215px;
+}
+#zoom #ZoomRepins
+{
+	clear: both;
+	padding-bottom: 20px;
+}
+#zoom #ZoomRepins li
+{
+	height: auto;
+	margin: 0 10px 10px 0;
+	overflow: hidden;
+	width: 290px;
+}
+#zoom #ZoomRepins li:nth-child(odd)
+{
+	clear: left;
+	margin-right: 0;
+	width: 300px;
+}
+#zoom #ZoomRepins li .ImgLink
+{
+	float: left;
+	height: 49px;
+	margin: 0 10px 1px 0;
+	width: 49px;
+}
+#zoom #ZoomRepins li p
+{
+	margin-top: 8px;
+}
+#zoom #ZoomRepins li a
+{
+	display: inline-block;
+	max-width: 165px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+#zoom #ZoomLikes
+{
+	clear: both;
+}
+#zoom #ZoomLikes ul
+{
+	overflow: hidden;
+}
+#zoom .PinInfo .PinMoreActivity
+{
+	margin: 10px 0 0;
+}

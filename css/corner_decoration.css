@@ -1,0 +1,85 @@
+.sidebar{
+	background: #f7f1e2;
+	1background-image: url(../img/decoration/box_008_ct.png);
+}
+.sidebar .sidebarLeftTop{
+	background-image: url(../img/decoration/box_008_cr.png);
+	background-position: left top;
+	height: 20px;
+	width: 20px;
+	position: absolute;
+	left: -20px;
+	top: -20px;
+}
+.sidebar .sidebarCenterTop{
+	background-image: url(../img/decoration/box_008_tb.png);
+	background-position: left top;
+	height: 20px;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: -20px;
+}
+.sidebar .sidebarRightTop{
+	background-image: url(../img/decoration/box_008_cr.png);
+	background-position: right top;
+	height: 20px;
+	width: 20px;
+	position: absolute;
+	right: -20px;
+	top: -20px;
+}
+.sidebar .sidebarLeft{
+	background-image: url(../img/decoration/box_008_ss.png);
+	background-position: left top;
+	height: 100%;
+	width: 20px;
+	position: absolute;
+	left: -20px;
+	top: 0;
+}
+.sidebar .sidebarRight{
+	background-image: url(../img/decoration/box_008_ss.png);
+	background-position: right top;
+	height: 100%;
+	width: 20px;
+	position: absolute;
+	right: -20px;
+	top: 0;
+}
+.sidebar .rightCorner{
+	background-image: url(../img/decoration/box_008_token_right.png);
+	background-position: left top;
+	height: 70px;
+	width: 40px;
+	position: absolute;
+	right: -40px;
+	top: -10px;
+}
+.sidebar .sidebarLeftBottom{
+	background-image: url(../img/decoration/box_008_cr.png);
+	background-position: left bottom;
+	height: 20px;
+	width: 20px;
+	position: absolute;
+	left: -20px;
+	bottom: -20px;
+}
+.sidebar .sidebarCenterBottom{
+	background-image: url(../img/decoration/box_008_tb.png);
+	background-position: left bottom;
+	height: 20px;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: -20px;
+}
+.sidebar .sidebarRightBottom{
+	background-image: url(../img/decoration/box_008_cr.png);
+	background-position: right bottom;
+	height: 20px;
+	width: 20px;
+	position: absolute;
+	right: -20px;
+	bottom: -20px;
+}

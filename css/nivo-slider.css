@@ -1,0 +1,124 @@
+/*
+ * jQuery Nivo Slider v2.7.1
+ * http://nivo.dev7studios.com
+ *
+ * Copyright 2011, Gilbert Pellegrom
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ * 
+ * March 2010
+ */
+ 
+ 
+/* The Nivo Slider styles */
+.nivoSlider {
+	position:relative;
+	height: 289px;
+}
+.nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:700px;
+	height:289px;
+	border:0;
+	padding:0;
+	margin:0;
+	z-index:6;
+	display:none;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice {
+	display:block;
+	position:absolute;
+	z-index:5;
+	height:100%;
+}
+.nivo-box {
+	display:block;
+	position:absolute;
+	z-index:5;
+}
+/* Caption styles */
+.nivo-caption {
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	background:#000;
+	color:#fff;
+	opacity:0.8; /* Overridden by captionOpacity setting */
+	width:100%;
+	z-index:8;
+}
+.nivo-caption p {
+	padding:5px;
+	margin:0;
+}
+.nivo-caption a {
+	display:inline !important;
+}
+.nivo-html-caption {
+    display:none;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+	position:absolute;
+	z-index:9;
+	cursor:pointer;
+	text-align: center;
+	text-indent: -9999px;	
+	background-repeat: no-repeat;	
+}
+.nivo-prevNav, .nivo-nextNav{
+	background-image: url(../img/shortcodes/arrowsAS.png);
+	height: 30px;
+	width: 30px;
+}
+.nivo-prevNav {
+	left:0px;
+	background-position: left top;
+}
+.nivo-nextNav{
+	right:0px;
+	background-position: right top;
+}
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav a {
+	position:relative;
+	z-index:9;
+	cursor:pointer;
+}
+.nivo-directionNav a:hover {
+	opacity: .8;
+}
+.nivo-controlNav a.active {
+	font-weight:bold;
+}
+/****************************/
+.nivoSlider img{
+	width: 700px;
+	height: 289px;
+}
+.nivo-controlNav{
+	position: absolute;
+	bottom: -11px;
+	left: 0;
+	background: #fff;
+	height: 11px;
+}
+.nivo-controlNav a{
+	text-indent: -9999px;
+	float: left;
+	width: 140px;
+	height: 11px;
+	background: url(../img/gallery_page_nav.png) no-repeat 0 0;
+}
+.nivo-controlNav a.active {
+	background-position: 0 -22px;
+}
