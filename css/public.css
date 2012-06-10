@@ -4,7 +4,7 @@ body{
   height: 100%;
   background: #999;
   word-wrap: break-word;
-  font-family: "Microsoft Yahei",Tahoma,Arial,Helvetica,STHeiti;
+  font-family: "Microsoft Yahei","Î¢ÈíÑÅºÚ",Tahoma,Arial,Helvetica,STHeiti;
   _font-family: Tahoma,Arial,Helvetica,STHeiti;
   
 }
@@ -40,7 +40,7 @@ h2 small{
 }
 ul, ol{
  	list-style: none outside none;
-    margin-left: 0;
+  margin-left: 0;
 }
 a{
 	color: #333;
@@ -123,8 +123,8 @@ img{
 
 #header{
  1margin-top: 10px;
- color: #555;
- text-shadow: 0 1px #ccc;
+ color: #333;
+ 1text-shadow: 0 1px #ccc;
  1border: 1px solid red;
 }
 
@@ -305,11 +305,16 @@ ul ul{
 	color: #666;
 	font-size: 12px;
 }
-
+.box, .well{
+	position: relative;	
+}
 .viewAll{
+	position: absolute;	
 	text-align: right;
 	font-size: 11px;
 	margin-right: 0;
+	right: 20px;
+	bottom: 20px;
 }
 .viewAll a{
 	1height: 38px;
@@ -496,8 +501,8 @@ ul ul{
 	margin-bottom: 20px;
 }
 .event img{
-	width: 150px;
-	height: 150px;
+	width: 110px;
+	height: 110px;
 }
 
 .events p{
@@ -929,4 +934,15 @@ legend p{
 .ui-accordion-header{
 	cursor: pointer;	
 	outline: 0;
+}
+
+.linkTo{
+	color: #999;	
+	font-size: 12px;
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+}
+.linkTo:hover{
+	color: #333;	
 }

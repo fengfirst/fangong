@@ -49,11 +49,11 @@ var ScrollToTop = ScrollToTop || {
 	  
     ScrollToTop.setup();
 	
-
+/*
 	$('.toggleImage a, .imageSetHolder .count').click(function(){
 		$(this).parents('.imageSetHolder').toggleClass('enlarge');
 		return false;									  
-	});
+	});*/
 	
 	
 	
